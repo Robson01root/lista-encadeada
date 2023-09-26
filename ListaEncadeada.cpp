@@ -1,13 +1,16 @@
 #include <iostream>
-#include "conio.h"
+#include <conio.h>
+#include <cstring>
 using namespace std;
+
 struct DADOS_ALUNO{
   int CodAluno;
   char Nome[100];
   int Turma;
   struct DADOS_ALUNO * ptrLink;
 };
-void main(){
+
+int main(){
   int Ind;
   struct DADOS_ALUNO *ptrCabeca;
   struct DADOS_ALUNO *ptrPrimeiraNo, *ptrSegundoNo;
@@ -32,6 +35,7 @@ void main(){
   ptrPrimeiraNo->ptrLink = ptrSegundoNo;
   ptrAux = ptrCabeca->ptrLink;
   Ind = 1;
+  
 while(ptrAux != NULL){
    cout << "Nó: " << Ind << endl;
    cout << "Código do Aluno: " << ptrAux->CodAluno << endl;
