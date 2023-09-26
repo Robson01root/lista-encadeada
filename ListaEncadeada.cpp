@@ -45,6 +45,7 @@ while(ptrAux != NULL){
    Ind++;
    ptrAux = ptrAux->ptrLink;
 }
+  
 // Libera o espaço de memória
 delete ptrCabeca;
 delete ptrPrimeiraNo;
