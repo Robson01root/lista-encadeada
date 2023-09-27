@@ -1,2 +1,2 @@
 # lista-encadeada
-lista encadeada em c++
+lista encadeada em c++ usando ponteiros
